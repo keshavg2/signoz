@@ -71,6 +71,13 @@ function TraceTable(): JSX.Element {
 
 	const columns: ColumnsType<TableType> = [
 		{
+			title: 'TraceId',
+			dataIndex: 'traceID',
+			key: 'traceID',
+			width: 70,
+			render: getValue,
+		},
+		{
 			title: 'Date',
 			dataIndex: 'timestamp',
 			key: 'timestamp',
